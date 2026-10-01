@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.expense-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.expense-form input,
+.expense-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.expense-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.expense-card h3 {
+  margin: 0 0 10px;
+}
+
+.expense-card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-item {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-item h3 {
+  margin: 0;
+}
+
+.expense-item p {
+  margin: 5px 0;
+  color: gray;
+}
+
+.delete-btn {
+  margin-left: 15px;
+  background-color: #dc2626;
+}
